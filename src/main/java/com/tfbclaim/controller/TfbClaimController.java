@@ -1,30 +1,26 @@
 package com.tfbclaim.controller;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 
-import com.tfbclaim.model.MemberRepository;
 @Controller
 public class TfbClaimController {
 
-//	@Autowired
-//	MemberRepository repo;
-
-
-	@RequestMapping("/index")
-	public String index(/*Model model*/) {
-//		model.addAttribute("member", repo.findAll());
+	@RequestMapping(value="/", method = RequestMethod.GET)
+	public String homepage() {
 		return "index";
 	}
 	
-	@RequestMapping("/contest")
-	public String contest(/*Model model*/) {
-//		model.addAttribute("member", repo.findAll());
+	/*@RequestMapping("/contest")
+	public String contest() {
 		return "contest";
 	}
-
-
+	
+	@RequestMapping("/form")
+	public String form(){
+		return "form";
+	}
+	*/
+	
 }

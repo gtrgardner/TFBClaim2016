@@ -1,23 +1,61 @@
 <!DOCTYPE html>
-<html lang="en-US" xmlns:th="http://www.thymeleaf.org">
+<html lang="en-US" ng-app="app" class="no-js">
 <head>
 <meta charset="UTF-8">
 <meta http-equiv="Content-Type" content="text/html">
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet"
-	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<meta name="description" content="">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- <link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap
+	/3.3.7/css/bootstrap.min.css"> -->
+	<link rel="stylesheet" href="/css/app.css">
+
 <title>Texas Farm Bureau</title>
 </head>
 <body>
-
-	<div class="jumbotron">
-		<div class="container">
-			<img
-				src="http://texasfarmbureau.org/wp-content/uploads/2015/04/TFB_Logo.png"
-				alt="">
+<nav class="navbar navbar-default navbar-static-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header navbar-brand">
+    	<div class="boxhead">
+      <a href="#/login"><span class="glyphicon glyphicon-user" ></span></a>
+      <a href="#/login">Login</a>
+      </div>
+    </div>
+  </div>
+</nav>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-10 col-md-offset-1">
+				<div class="jumbotron">
+					<div class="container">
+						<img src="http://texasfarmbureau.org/wp-content/uploads/2015/04/TFB_Logo.png"
+							alt="">
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
-
+	 <div class="container">
+		<div class="row">
+			<div class="col-md-10 col-md-offset-1">
+				<img src="images/barley-field-1684052_1280.jpg"
+				 class="img-rounded" alt="" width="950" height="250">
+			</div>
+		</div>
+	</div> 
+	<div class="home-section">
+    <ul class="menu-list">
+        <li><a href="#/users">Users</a></li>
+        <li><a href="#/roles">Roles</a></li>
+    </ul>
+</div>
+<div ng-view></div>
+<script src="/webjars/angularjs/1.5.8/angular.js"></script>
+<script src="/webjars/angularjs/1.5.8/angular-resource.js"></script>
+<script src="/webjars/angularjs/1.5.8/angular-route.js"></script>
+<script src="/js/app.js"></script>
+<script src="/js/controller.js"></script>
+<link rel="stylesheet" href="/webjars/bootstrap/3.3.6/css/bootstrap.css">
+</body>
 </body>
 </html>
